@@ -4,7 +4,7 @@ require_once __DIR__ . "/product.php";
 class Food extends Product
 {
     private string $expiringDate;
-    private array $ingredientList;
+    private array $ingredientList = [];
 
 
     public function getExpiringDate()
@@ -25,10 +25,6 @@ class Food extends Product
 
     public function setIngredientList($ingredientList)
     {
-        if (is_array($ingredientList)) {
-            $this->ingredientList = $ingredientList;
-        }else{
-            $this->ingredientList[] = $ingredientList;
-        }
+        $this->ingredientList = $this->setGeneralList($this->ingredientList, $ingredientList);
     }
 }
