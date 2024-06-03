@@ -16,6 +16,11 @@ class Toy extends Product
         return $this->size;
     }
 
+    public function getGeneralList()
+    {
+        return $this->materialList;
+    }
+
     public function setMaterialList($materialList)
     {
        $this->materialList = $this->setGeneralList($this->materialList, $materialList);

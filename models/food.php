@@ -17,6 +17,11 @@ class Food extends Product
         return $this->ingredientList;
     }
 
+    public function getGeneralList()
+    {
+        return $this->ingredientList;
+    }
+
     public function setExpiringDate($expiringDate)
     {
         $this->expiringDate = $expiringDate;

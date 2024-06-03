@@ -38,6 +38,11 @@ class Product
         return $this->quantity;
     }
 
+    public function getGeneralList()
+    {
+        return $this->generalList;
+    }
+
 
     //Metodi Set
     public function setName($name)

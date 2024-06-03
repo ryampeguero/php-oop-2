@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(56, 56, 94);
+}
+
+img {
+    max-width: 100%;
+}
+
+.ms_card {
+    min-height: 600px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.ms_card img {
+    /* max-width: 300px; */
+    min-height: 300px;
+    aspect-ratio: 1;
+}

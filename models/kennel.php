@@ -28,6 +28,11 @@ class Kennel extends Product
         return $this->materialList;
     }
 
+    public function getGeneralList()
+    {
+        return $this->materialList;
+    }
+
     public function setCapability($capability)
     {
         $this->capability = $capability;
